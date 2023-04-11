@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Lighter SleeveS: The only one you'll ever want</title>
+			<link rel="stylesheet" href="styles.css">
+		</head>
+	<body>
+		<header id="header-part">
+			<a href="https://lightersleeves.com" alt="Return to Lighter SleeveS Home"><img src="images/lighter-sleeves-logo.png" alt="Lighter SleeveS: The only one you'll ever want." class="logo" /></a>
+		</header>
+		<div id="banner">
+			<div class="slideshow-container">
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 3</div>
+				  <img src="images/leather-just-cut.jpg" alt="We laser-cut all our Lighter Sleeves to get you an exact fit!" style="width:100%">
+				</div>
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 3</div>
+				  <img src="images/buy-in-bulk.jpg" alt="We have large order discounts and can supply too!" style="width:100%">
+				</div>
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 3</div>
+				  <img src="images/variety.jpg" alt="We believe that having multiple types and patterns is the best thing to do!" style="width:100%">
+				</div>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+			<div class="info-container">
+				<div class="myInfo fade">
+					<img src="images/made-in-usa.png" alt="Made in the U.S.A." class="made-usa">
+					<h2>We laser-cut to get you an exact fit!</h2>
+					<br />
+					<p>After cutting these with precision tools, we hand-stitch everything for your Lighter Sleeve.</p>
+				</div>
+				<div class="myInfo fade">
+					<img src="images/veteran-owned.png" alt="Veteran-owned and operated" class="made-usa">
+					<h2>We are veteran-owned and made in Utah</h2>
+					<br />
+					<p>Whenever you purchase one of our LighterSleeveS, you're helping support Utah locals and making a vet's dream come true.</p>
+				</div>
+				<div class="myInfo fade centered">
+					<h2>We utilize 90% repurposed or recycled materials for our packaging</h2>
+					<br />
+					<p>We realize that the world is hurting currently, and actively do our part to keep it healthy.</p>
+				</div>
+			</div>
+		</div>
+		<div class="dots" style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+		<div class="parallax"></div>
+		<div class="sales-pitch">
+			<div class="left-pitch">
+				<h2><span>Our Lighter Sleeves make the perfect gift for your loved ones and an amazing gift for any camping enthusiast.</span></h2>
+				<img src="images/keychain.png" alt="Our Lighter Sleeves make your lighter a keychain!" class="keychain">
+			</div>
+			<div class="right-pitch">
+				<h4>We are working on numerous models for each lighter type everyday!</h4>
+			</div>
+		</div>
+		<div class="social-media">
+			
+		</div>
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+		function showSlides(n) {
+		  let i;
+		  let info = document.getElementsByClassName("myInfo");
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";
+		    info[i].style.display = "none"; 
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  info[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+	</body>
+</html>
