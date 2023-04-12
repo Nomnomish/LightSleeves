@@ -159,6 +159,7 @@ h2 span{
 .keychain{
   width: 50%;
   height: auto;
+  float: left;
 }
 .left-pitch{
     flex: 1;
@@ -167,4 +168,9 @@ h2 span{
 .right-pitch{
   flex:1;
   align-self: center;
+}
+.left-pitch-text{
+  color: #ffffff;
+  font-size: 20px;
+
 }
