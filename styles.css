@@ -172,5 +172,9 @@ h2 span{
 .left-pitch-text{
   color: #ffffff;
   font-size: 20px;
-
+}
+.variety{
+  float: left;
+  width: 50%;
+  height: auto;
 }
