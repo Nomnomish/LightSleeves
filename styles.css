@@ -28,12 +28,12 @@ body{
 }
 .sales-pitch{
 	margin: 0px;
-  flex: 1;
 	min-height: 500px;
   width: 100%;
   display: flex;
 	background-color: #165096;
 	color: #ffffff;
+  flex-flow: row wrap;
 }
 .sales-pitch h2{
 	font-family: "Times New Roman", Times, serif ;
@@ -174,7 +174,12 @@ h2 span{
   font-size: 20px;
 }
 .variety{
-  float: left;
-  width: 50%;
+  align-self: center;
+  width: 75%;
   height: auto;
+}
+.right-pitch-text{
+  padding: 5px;
+  font-size: 18px;
+  float: left;
 }
