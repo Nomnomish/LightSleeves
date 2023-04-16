@@ -147,7 +147,6 @@ h2 span{
   align-self: center;
 }
 .social-media{
-  flex: 1;
   display: flex;
   padding-left: 10%;
   padding-right: 10%;
@@ -183,3 +182,16 @@ h2 span{
   font-size: 18px;
   float: left;
 }
+footer{
+  height: 350px;
+  background-color: #e59311;
+  display: flex;
+  flex-wrap: row wrap;
+}
+.one-third{
+  flex: 1;
+}
+.social-media h3{
+  text-align: right;
+  padding: 15px;
+  font-family: "Times New Roman", Times, serif;}
