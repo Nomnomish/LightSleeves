@@ -19,7 +19,7 @@ body{
 }
 .parallax {
 	background-image: url("images/buy-in-bulk.jpg");
-	min-height: 450px;
+	min-height: 650px;
 	margin: 0px;
 	background-attachment: fixed;
 	background-position: center;
@@ -151,6 +151,7 @@ h2 span{
   width: 100%;
   margin: 0;
   flex-flow: row nowrap;
+  text-align: center;
 }
 .keychain{
   width: 50%;
@@ -180,35 +181,65 @@ h2 span{
   float: left;
 }
 footer{
-  height: 350px;
+  height: 75px;
   background-color: #e59311;
   display: flex;
   flex-wrap: row wrap;
+  margin: 0px;
+  padding: 0px;
 }
 .one-third{
   flex: 1;
 }
 .facebook{
+  background-color: #4267B2;
   color: #ffffff;
-  background-color: #ffffff;
   width: 100%;
-  height: 150px;
   text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
   text-decoration: none;
-  flex: 1;
+  font-family: "Times New Roman", Times, serif;
+}
+.facebook:visited{
+  background-color: #4267B2;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
 }
 .facebook:hover{
-  background-color: #4267B2;
+  color: #4267B2;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
 }
 .twitter{
+  background-color: #1DA1F2;
   color: #ffffff;
-  background-color: #ffffff;
   width: 100%;
-  height: 150px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   text-align: center;
   text-decoration: none;
-  flex: 1;
+  font-family: "Times New Roman", Times, serif;
+}
+.twitter:visited{
+  background-color: #1DA1F2;
+  color: #ffffff;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
 }
 .twitter:hover{
-  background-color: #1DA1F2;
+  color: #1DA1F2;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
 }
